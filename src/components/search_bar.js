@@ -5,14 +5,17 @@ import React, { Component } from 'react';
 	return <input />
 }*/
 class SearchBar extends Component{
-	render() {
+	/*render() {
 		return <input onChange={this.onInputChange}/>
+	}*/
+	render() {
+		return <input onChange={event => console.log(event.target.value) } />;
 	}
 
-	onInputChange() {
+	/*onInputChange(event) {
 		//whenever the input changes, run the code inside here
-
-	}
+		console.log(event.target.value);
+	}*/
 }
 
 
